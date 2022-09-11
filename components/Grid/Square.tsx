@@ -12,7 +12,7 @@ const squareSize = (width: string, height: string) => {
     }
 }
 
-export default function({ width, height }: SquareProps): JSX.Element {
+export default function Square({ width, height }: SquareProps): JSX.Element {
     const [pressed, setPressed] = useState(false)
     const handlePress = () => setPressed(!pressed)
     return <div className={`${styles.square} ${pressed ? styles.pressed : ''}`} style={squareSize(width, height)}onClick={handlePress}></div>
