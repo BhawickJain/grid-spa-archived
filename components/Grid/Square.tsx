@@ -3,7 +3,7 @@ import styles from './square.module.css';
 
 interface SquareProps {
     width: string;
-    height: string
+    height: string;
 }
 const squareSize = (width: string, height: string) => {
     return {

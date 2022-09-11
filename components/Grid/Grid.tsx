@@ -15,13 +15,13 @@ const gridStyle = (rows: number, columns: number, size: string) => {
             }
 }
 
-export default function({ rows, columns, size }: GridProps): JSX.Element {
+export default function Grid ({ rows, columns, size }: GridProps): JSX.Element {
     
     const numberOfCells = rows * columns
 
     return (
         <div style={ gridStyle(rows, columns, `${size + size*0.1}px`) }>
-            {[...Array(numberOfCells)].map((i) => <Square key={i} width={`${size}px`} height={`${size}px`}/>)}
+            {[...Array(numberOfCells)].map((_, i) => <Square key={`${i}`} width={`${size}px`} height={`${size}px`}/>)}
         </div>
  
     )
