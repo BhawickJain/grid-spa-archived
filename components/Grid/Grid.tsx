@@ -1,4 +1,3 @@
-import styles from "./grid.module.css";
 import Square from "./Square";
 
 interface GridProps {
