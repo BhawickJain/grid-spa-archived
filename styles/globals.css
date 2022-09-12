@@ -1,6 +1,6 @@
 :root {
   /* breaking widths */
-  --width-1: 900px
+  --width-1: 900px;
 
   /* fonts */
   --regular: Verdana, Geneva, Tahoma, sans-serif;
